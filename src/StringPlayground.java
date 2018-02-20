@@ -31,8 +31,8 @@ public class StringPlayground {
             String first = name.substring(0,mid1);
             String last = name.substring(mid3+1);
                 
-        }String formal = "jaboody."+first+mn1+mn2+last;
-        return(formal);
+        }//String formal = "jaboody."+first+mn1+mn2+last;
+        return("temp");
         
         /*   int mid1 = name.indexOf(" ");
         int mid2 = name.indexOf(" ",mid1+1);
