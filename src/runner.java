@@ -10,10 +10,10 @@
  */
 public class runner {
     public static void main(String[] args) {
-      StringPlayground sp = new StringPlayground();    
+     /* StringPlayground sp = new StringPlayground();    
                String temp = sp.formalName("Hamish Catrick Harogo");
                System.out.println(temp);
-        //Testing Zone
+        //Testing Zone - can be ignored.
                 String word = "abcdefghijklmnop";
                     String part = word.substring(4,9);
                         System.out.println(part);
@@ -25,7 +25,14 @@ public class runner {
                             {System.out.println("equals indeed");}
                          else{
                             System.out.println("no equals here");
-                        }
-                    
-    }
+                        }*/
+        //Assignment testing begins here!
+            StringTheory runMan = new StringTheory();
+            //[01]
+                runMan.sameWords("beans!", "beans!", "beans!");
+            //[02]
+                runMan.alphaOrder("a bean", "b bean");
+            //[03]
+                
+    }       
 }

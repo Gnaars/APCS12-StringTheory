@@ -1,13 +1,10 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
  * @author chrx
- */
+This class can be ignored, I was playing around with making a method that
+was similar to the formalName method in your tutorial except I wanted it
+to be scalable to four names.  Then I realized I was wasting alot of time...
+feel free to look through it if you want.  I never got to complete it.
+*/
 public class StringPlayground {
    //Given Paul Malachi Alexander Fedor return Jaboody.PaulMAFedor
     //This method should work with 3 or 4 letter names.
@@ -32,7 +29,7 @@ public class StringPlayground {
             String last = name.substring(mid3+1);
                 
         }//String formal = "jaboody."+first+mn1+mn2+last;
-        return("temp");
+        return("test");
         
         /*   int mid1 = name.indexOf(" ");
         int mid2 = name.indexOf(" ",mid1+1);
