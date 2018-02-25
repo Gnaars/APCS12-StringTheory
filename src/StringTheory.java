@@ -42,10 +42,24 @@ public class StringTheory {
             }
         //[03] chunks Method
     public void chunks(String a){
-            for(int i=0;i<a.length();i++){
-                
+                for(int i=0;i<a.length()-2;i++){
+            String three = a.substring(i,i+3);
+                        System.out.println(three);
                 }
             }
+        //[04] ENum Method
+    public int ENum(String a){
+                int counter = 0;
+                for(int i=0;i<a.length();i++){
+            String e = a.substring(i,i+1);
+                if(e.equals("e")==true){
+                    counter++;
+                }    
+                }
+                        System.out.println("There are "+counter+" e's");
+                return(counter);
+            }
+        //[05] howMany
     }
  
 

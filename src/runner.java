@@ -28,11 +28,14 @@ public class runner {
                         }*/
         //Assignment testing begins here!
             StringTheory runMan = new StringTheory();
-            //[01]
+            //[01]  sameWords Test
                 runMan.sameWords("beans!", "beans!", "beans!");
-            //[02]
+            //[02]  alphaOrder Test
                 runMan.alphaOrder("a bean", "b bean");
-            //[03]
-                
-    }       
+            //[03]  chunks Test
+                runMan.chunks("abcdefghij");
+            //[04]  ENum Test
+                runMan.ENum("Beeeeeeeans");
+            //[05]    
+    }           
 }
