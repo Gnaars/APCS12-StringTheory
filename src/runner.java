@@ -36,6 +36,9 @@ public class runner {
                 runMan.chunks("abcdefghij");
             //[04]  ENum Test
                 runMan.ENum("Beeeeeeeans");
-            //[05]    
+            //[05]  howMany Test
+                runMan.howMany("The the quick THE The brown fox jumped over the lazy dog");
+            //[06]  DateSplit Test
+                runMan.DateSplit("2000-3-4");
     }           
 }

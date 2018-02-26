@@ -9,10 +9,7 @@
  * @author chrx
  */
 public class StringTheory {
-        String a;
-        String b;
-        String c;
-        
+    
         //[01] sameWords Method
     public boolean sameWords(String a, String b, String c){
             int r1 = a.compareTo(b); //result 1
@@ -49,7 +46,7 @@ public class StringTheory {
             }
         //[04] ENum Method
     public int ENum(String a){
-                int counter = 0;
+            int counter = 0;
                 for(int i=0;i<a.length();i++){
             String e = a.substring(i,i+1);
                 if(e.equals("e")==true){
@@ -57,9 +54,33 @@ public class StringTheory {
                 }    
                 }
                         System.out.println("There are "+counter+" e's");
-                return(counter);
+                    return(counter);
             }
-        //[05] howMany
+        //[05] howMany Method
+    public int howMany(String a){
+            int counter = 0;   
+                for(int i=0;i<a.length()-2;i++){
+            String three = a.substring(i,i+3);    
+                if(three.equals("the")==true||three.equals("The")==true||three.equals("THE")==true){
+                    counter++;
+                }    
+                }
+                        System.out.println(counter+" the's found");
+                    return(counter);
+                }
+        //[06] DateSplit Method - only accepts yyyy-mm-dd format
+    public void DateSplit(String a){
+            int d1 = a.indexOf("-"); //dash 1
+            int d2 = a.indexOf("-",d1+1); //dash 2
+                String year = a.substring(0,d1);
+                String month = a.substring(d1+1,d2);
+                String day = a.substring(d2+1);
+                        System.out.println(year+"\n"+month+"\n"+day);
+                }
+        //[07] pad5 Method - Must input 5 or less digits
+    public String pad5(int x){
+            return("placeholder");
+                }
     }
  
 
