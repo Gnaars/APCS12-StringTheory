@@ -79,8 +79,63 @@ public class StringTheory {
                 }
         //[07] pad5 Method - Must input 5 or less digits
     public String pad5(int x){
-            return("placeholder");
+            String num = Integer.toString(x);
+            int numLeng = num.length();
+                String zero = "00000";
+                String format = zero.substring(0,5-numLeng);
+                String fin = format + num;
+                        System.out.println(fin);
+                    return(fin);
+                }
+        //[08] individualWords Method        
+    public void individualWords(String sent){
+                int count = 0;
+                for(int i=0;i<sent.length();i++){
+                    if(sent.charAt(i)==' '){
+                        System.out.println(sent.substring(count,i));
+                            count = i + 1;
+                    }
+
+                    }System.out.println(sent.substring(count,sent.length()));
+                }
+        //[09] makeName Method - The first name I generated was "Rufu" 
+    public String makeName(){
+            String cons = "bcdfghjklmnpqrstuvwxz";
+            String vow = "aeiou";        
+                Character c1 = cons.charAt((int) (Math.random() * cons.length()));
+                Character c2 = vow.charAt((int) (Math.random() * vow.length()));
+                Character c3 = cons.charAt((int) (Math.random() * cons.length()));
+                Character c4 = vow.charAt((int) (Math.random() * vow.length()));
+                    String format = new StringBuilder().append(c1).append(c2).append(c3).append(c4).toString();
+                            System.out.println(format);
+                        return(format);
+                }
+        //[10] pad5 
+    public String pad5(int[] nums){
+            String fin = " ";
+            for(int i=0;i<nums.length;i++){
+            String num = Integer.toString(nums[i]);
+                int numLeng = num.length();
+                    String zero = "00000";
+                    String format = zero.substring(0,5-numLeng);
+                    String semiFin = format + num;
+                        fin = fin + semiFin;
+                    }
+                            System.out.println(fin);
+                        return(fin);
+                }
+        //[11] containsNumeric Method 
+    public boolean containsNumeric(String s){
+            String nums = "123456789";
+                for(int i=0;i<s.length();i++){
+                    for(int k=0;k<nums.length();k++){
+                        if(s.charAt(i)==nums.charAt(k)){
+                            System.out.println("true");
+                        return(true);
+                        }
+                    }
+                    }
+                            System.out.println("false");
+                        return(false);
                 }
     }
- 
-
